@@ -1,0 +1,8 @@
+version: '2'
+services:
+  web:
+    build: './source/dictionary'
+    ports:
+     - "5002:11001"
+    env_file:
+     - web.env
